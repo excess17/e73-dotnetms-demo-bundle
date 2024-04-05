@@ -1,0 +1,21 @@
+{
+    "microservices": [
+        {
+            "name": "e73-dotnet-demo",
+            "stack": "custom",
+            "healthCheckPath": "/api/health",
+            "commands": {
+                "run": "dotnet run",
+                "build": "echo 'no-op build'",
+                "pack": "buildah bud -t e73-dotnet-demo ."
+            },            
+            "version":"0.0.1"
+        }
+    ],
+    "microfrontends": [],
+    "svc": [],
+    "name": "e73-dotnetms-demo-bundle",
+    "version": "0.0.1",
+    "description": "e73-dotnetms-demo-bundle description",
+    "type": "bundle"
+}
